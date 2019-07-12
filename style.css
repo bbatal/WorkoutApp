@@ -139,12 +139,13 @@ time, audio {
 }
 
 div[id^="place"] {
-  width: 200px;
-  height: 100px;
-  margin: 3px;
-  padding: 3px;
-  border: 1px dotted #333333;
-  background-color: #ffff99;
+  width: 150px;
+  height: 80px;
+  margin: 1px;
+  margin-left: 3em;
+  padding: 1px;
+  /*border: 1px dotted black;*/
+  background-color: white;
 }
 
 .box {
@@ -165,5 +166,5 @@ div[id^="place"] {
 
 img {
   width: 200px;
-  height: 70px;
+  height: 78px;
 }
