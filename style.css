@@ -153,7 +153,7 @@ div[id^="place"] {
   height: 80px; 
   background-color: rgba(red, green, blue, 0.5);
   border: 1px solid black;
-  position: relative;
+  
 }
 
 .main-container {
@@ -165,6 +165,6 @@ div[id^="place"] {
 }
 
 img {
-  width: 200px;
+  width: 150px;
   height: 78px;
 }
