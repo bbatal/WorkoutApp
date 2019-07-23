@@ -7,7 +7,17 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-  <h2 id="heading">Monday</h2>
+    <div id="heading">
+        <h2>Monday</h2>
+        <h2>Tuesday</h2>
+        <h2>Wednesday</h2>
+        <h2>Thursday</h2>
+        <h2>Friday</h2>
+        <h2>Saturday</h2>
+        <h2>Sunday</h2>
+</div>
+<div id="ultimate-container">
+    <div class="container2">
 <div class ="container">
       <div class="timings">
           <div> <span> 0:00 </span> Min </div>
@@ -37,32 +47,92 @@
           <div> <span> 120 </span> Min </div>
           
   </div>
-    <div class="container2">
-      <div>
+
+      <div> 
     
-          <div class="days empty box" id="events" ondrop="dropIt(event);" ondragover="event.preventDefault();">
+          <div class="days empty box" id="events1"  ondrop="dropIt(event);" ondragover="event.preventDefault();">
       </div>
       <div>
     
-          <div class="days empty box" id="events" ondrop="dropIt(event);" ondragover="event.preventDefault();">
+          <div class="days empty box" id="events2" ondrop="dropIt(event);" ondragover="event.preventDefault();">
       </div>
       <div>
     
-          <div class="days empty box" id="events" ondrop="dropIt(event);" ondragover="event.preventDefault();">
+          <div class="days empty box" id="events3" ondrop="dropIt(event);" ondragover="event.preventDefault();">
       </div>
       <div>
     
-          <div class="days empty box" id="events" ondrop="dropIt(event);" ondragover="event.preventDefault();">
+          <div class="days empty box" id="events4" ondrop="dropIt(event);" ondragover="event.preventDefault();">
       </div>
       <div>
     
-          <div class="days empty box" id="events" ondrop="dropIt(event);" ondragover="event.preventDefault();">
+          <div class="days empty box" id="events5" ondrop="dropIt(event);" ondragover="event.preventDefault();">
       </div>
       <div>
     
-          <div class="days empty box" id="events" ondrop="dropIt(event);" ondragover="event.preventDefault();">
+          <div class="days empty box" id="events6" ondrop="dropIt(event);" ondragover="event.preventDefault();">
       </div>
+    
+</div>
+</div>
+<div class="container2">
+<div class="container">
+        <div class="timings">
+            <div> <span> 0:00 </span> Min </div>
+            <div> 5  </div>
+            <div> <span> 10 </span> Min </div>
+            <div> 15 </div>
+            <div> <span> 20 </span> Min </div>
+            <div> 25 </div>
+            <div> <span> 30 </span> Min </div>
+            <div> 35 </div>
+            <div> <span> 40 </span> Min </div>
+            <div> 45 </div>
+            <div> <span> 50 </span> Min </div>
+            <div> 55 </div>
+            <div> <span> 60 </span> Min </div>
+            <div> 65 </div>
+            <div> <span> 70 </span> Min </div>
+            <div> 75 </div>
+            <div> <span> 80 </span> Min </div>
+            <div> 85 </div>
+            <div> <span> 90 </span> Min </div>
+            <div> 95 </div>
+            <div> <span> 100 </span> Min </div>
+            <div> 105 </div>
+            <div> <span> 110 </span> Min </div>
+            <div> 115 </div>
+            <div> <span> 120 </span> Min </div>
+            
     </div>
+
+        <div>
+      
+            <div class="days empty box" id="events7" ondrop="dropIt(event);" ondragover="event.preventDefault();">
+        </div>
+        <div>
+      
+            <div class="days empty box" id="events8" ondrop="dropIt(event);" ondragover="event.preventDefault();">
+        </div>
+        <div>
+      
+            <div class="days empty box" id="events9" ondrop="dropIt(event);" ondragover="event.preventDefault();">
+        </div>
+        <div>
+      
+            <div class="days empty box" id="events10" ondrop="dropIt(event);" ondragover="event.preventDefault();">
+        </div>
+        <div>
+      
+            <div class="days empty box" id="events11" ondrop="dropIt(event);" ondragover="event.preventDefault();">
+        </div>
+        <div>
+      
+            <div class="days empty box" id="events12" ondrop="dropIt(event);" ondragover="event.preventDefault();">
+        </div>
+      
+  </div>
+</div>
 </div>
 
     <div class="category"> 
@@ -141,8 +211,31 @@
             <img src="images/tom3.png" alt="red-image" draggable="true" ondragstart="dragIt(event);" id="pic25"></div>
      </div>
     </div>
-
-       
+    <div id="bob">
+       <form name="myForm" action="" method="GET" onsubmit="event.preventDefault();">
+           Workout Type: <br>
+            <select type="text" name="workoutType" size="5">
+                <option value="">Chest</option>
+                <option value="">Back</option>
+                <option value="">Shoulders/abbs</option>
+                <option value="">Legs</option>
+                <option value="">Arms</option>
+             </select>
+                <br>
+           Workout Duration: <br>
+            <select type="text" name="workoutDuration"> 
+                <option value="">10 min</option>
+                <option value="">20 min</option>
+                <option value="">30 min</option>
+                <option value="">40 min</option>
+                <option value="">50 min</option>
+                <option value="">60 min</option>
+                
+              </select>  
+                <br><br>
+            <input type="submit" value="Submit" onclick="testSelect(this.form)"> 
+        </form>
+    </div>
 
 
 

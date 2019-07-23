@@ -1,6 +1,6 @@
 
 //generateMockEvents(5);
-
+// 1 min == 6px;
 /*const containerHeight = 720;
 const containerWidth = 600;
 const minutesinDay = 60 * 12;
@@ -107,3 +107,74 @@ function dragIt(theEvent) {
       dis6.style.visibility = "hidden";
     }
   };
+
+
+  function testSelect (form) {
+    var item = form.workoutDuration.selectedIndex;
+    var result = form.workoutDuration.options[item].text;
+    
+    var TestVar = form.workoutType.selectedIndex;
+    var result1 = form.workoutType.options[TestVar].text;
+
+
+    if (result === "10 min") {
+      let placement = document.getElementById("events1");
+      placement.innerText = result + " " + result1;
+    } else if (result === "20 min") {
+      let placement = document.getElementById("events1");
+      let placement1 = document.getElementById("events2");
+      placement1.innerText = result + "" + result1;
+      placement.innerText = result + "" + result1;
+    } else if (result === "30 min") {
+      let placement = document.getElementById("events1");
+      let placement1 = document.getElementById("events2");
+      let placement2 = document.getElementById("events3");
+      placement.innerText = result + "" + result1;
+      placement1.innerText = result + "" + result1;
+      placement2.innerText = result + "" + result1;
+    } else if (result === "40 min") {
+      let placement = document.getElementById("events1");
+      let placement1 = document.getElementById("events2");
+      let placement2 = document.getElementById("events3");
+      let placement3 = document.getElementById("events4");
+      placement.innerText = result + "" + result1;
+      placement1.innerText = result + "" + result1;
+      placement2.innerText = result + "" + result1;
+      placement3.innerText = result + "" + result1;
+
+    } else if (result === "50 min") {
+      let placement = document.getElementById("events1");
+      let placement1 = document.getElementById("events2");
+      let placement2 = document.getElementById("events3");
+      let placement3 = document.getElementById("events4");
+      let placement4 = document.getElementById("events5");
+      placement.innerText = result + "" + result1;
+      placement1.innerText = result + "" + result1;
+      placement2.innerText = result + "" + result1;
+      placement3.innerText = result + "" + result1;
+      placement4.innerText = result + "" + result1;
+
+    } else if (result === "60 min") {
+      let placement = document.getElementById("events1");
+      let placement1 = document.getElementById("events2");
+      let placement2 = document.getElementById("events3");
+      let placement3 = document.getElementById("events4");
+      let placement4 = document.getElementById("events5");
+      let placement5 = document.getElementById("events6");
+      placement.innerText = result + "" + result1;
+      placement1.innerText = result + "" + result1;
+      placement2.innerText = result + "" + result1;
+      placement3.innerText = result + "" + result1;
+      placement4.innerText = result + "" + result1;
+      placement5.innerText = result + "" + result1;
+
+    };
+
+    
+    
+    
+};
+
+
+
+//try append child
