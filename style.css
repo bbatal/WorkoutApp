@@ -6,8 +6,8 @@ body {
     display: flex;
     width: 3000px;
     margin: 10px;
-    justify-content: space-around;
-    font-size: 2em;
+    justify-content: space-between;
+    /*font-size: 2em;*/
     margin-top: 10px;
     
 }
@@ -31,16 +31,6 @@ body {
   border: 1px solid #aaaaaa;
 }
 
-
-
-.empty {
-   position: relative;
-    height: 60px;
-    width: 220px;
-    margin: 2px;
-    border: 3px salmon solid; 
-    background-color: white;
-}
 
 .invisible {
     display: none;
@@ -77,13 +67,25 @@ time, audio {
 }
 
 .container {
-  height:720px;
-  width: 350px;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  height:720px;
+  width: 300px;
   background-color: gray;
 }
+
+.container > h2 {
+  flex-grow: 1;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 30px;
+  font-size: 1.5em;
+}
+
+
 
 #ultimate-container{
   display: inline-block;
@@ -92,13 +94,15 @@ time, audio {
 }
 
 .timings {
-  text-align: right;
-  padding-right: 10px;
-  width: 120px;
-  height: 720px;
+  text-align: left;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 100px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
   background-color: white;
   font-size: 0.5em;
   box-sizing: border-box;
@@ -141,7 +145,7 @@ div[id^="place"] {
 .box {
   width: 200px;
   height: 80px; 
-  background-color: rgba(red, green, blue, 0.5);
+  background-color: white;
   border: 1px solid black;
   
 }
